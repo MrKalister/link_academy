@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru"> <!--потом исправить на en-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap" rel="stylesheet">
+	<title>Jane Doe</title>
+</head>
+<body>
+	<main>
+		<header>
+			<img src="img/logo.png" alt="logo">
+			<nav>
+				<a href="#">Jane Doe</a>
+				<a href="#">Tell us about yourself</a>
+				<a href="#">Slider</a>
+			</nav>
+		</header>
+		<section class="about_me">
+			<div class="about_me__wrapper">
+				<img src="img/Rectangle 1.jpg" alt="Jane Doe">
+			</div>
+			<div class="about_me__text">
+				<div class="about_me__basic-data">
+					<div class="about_me__title">
+						<h1>Jane Doe</h1>
+					</div>
+					<div class="about_me__brief">
+						<p>Date of birth</p><span>21.04.2001</span>
+						<p>Gender</p><span>Female</span>
+						<p>Country</p><span>Corea</span>
+					</div>
+				</div>
+
+				<div class="about_me__common-text">
+					<h2>About me</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+				</div>
+			</div>
+			<div class="about_me__boxes">
+				<div class="purple_box"></div>			
+				<div class="pink_box"></div>
+			</div>	
+		</section>
+
+		<section class="tell_us">
+			<div class="tell_us__wrapper">
+				<div class="tell_us__title">
+					<h2>Tell us about yourself</h2>
+				</div>
+	  	
+				<form action="#" method="post" enctype="multipart/form-data">
+					<div class="tell_us__form">
+						<div class="tell_us__name item_1" >
+							<p>Your name</p>
+							<input type="text" name="name" placeholder="Nikolay">
+						</div>
+						<div class="tell_us__gender item_2">
+						<p>Your gender</p>
+							<select>
+							  <option>Male</option>
+							  <option>Female</option>
+							</select>
+						</div>
+						<div class="tell_us__country item_3">
+							<p>Your country</p>
+							<input type="text" name="country" placeholder="Russia">
+						</div>
+						<div class="tell_us__city item_4">
+							<p>Your City</p>
+							<input type="text" name="city" placeholder="Moscow">
+						</div>
+						<div class="tell_us__birth item_5">
+							<p>Your date of birth</p>
+							<input type="date" name="birth" value="2001-04-01" min="1910-01-01" max="1999-04-01">
+						</div>
+						<div class="tell_us__file-upload item_6">
+							<p>Proof your identity with some documents</p>
+							<div class="btn">
+								<label for="files"><h4>Add document</h4></label>
+							</div>
+							<input id="files" style="visibility:hidden;" name="userfile" accept="image/*" type="file">
+						</div>
+					</div>
+					<div class="tell__us_upoaded-file">
+						<div class="tell_us_inner">
+							<div class="tell__us_avatar">
+								<img src="img/Proof.jpg" alt="icon">
+							</div>
+							<div class="tell__us_proof-info">
+								<p class="tell__us_file-name">File_name_001</p>
+								<p class="tell__us_file-stat">JPG 2,5 mb</p>	
+							</div>
+						</div>
+					</div>
+					<input type="submit" value="Send info" class="tell_us__send">
+				</form>
+				<div class="tell__us_boxes-group1">
+					<div class="tell__us_pink-box"></div>
+					<div class="tell__us_purple-box"></div>
+					<div class="tell__us_gray-box"></div>
+				</div>
+				<div class="tell__us_boxes-group2">
+					<!--<div class="tell__us_pink-box larger"></div>
+					<div class="tell__us_purple-box middle"></div>
+					<div class="tell__us_gray-box small"></div>-->					
+				</div>		
+			</div>
+		</section>
+		<section class="slide__show">
+			<div class="slide__show_wrap">	
+				<div class="slide__show_img">
+					<img src="img/Rectangle 10.jpg" alt="wave">
+				</div>
+				<div class="slide__show_text">
+					<h4>Slide this photo</h4>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+</html>
